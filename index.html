@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript test</title>
+</head>
+<body>
+    Hello
+    <script>
+        async function connect() {
+        if(typeof window.ethereum !== undefined) {
+                console.log("Metamask")
+                ethereum.request({method: "eth_requestAccounts"})
+        }
+    }
+    </script>
+    <button id="connectButton" onclick="connect()">Connect</button>
+</body>
+</html>
